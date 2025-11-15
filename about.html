@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast System</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('weather2.jpg'); /* Replace with your weather-themed background */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; /* Fix background to viewport */
+    height: 100vh; /* Ensure it fills the full viewport height */
+}
+
+
+        header {
+            background-color: #1E90FF; /* Sky blue theme */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            white-space: nowrap; /* Prevent text wrapping */
+            overflow: hidden;
+        }
+
+        h1 {
+            display: inline-block;
+            animation: weatherMarquee 15s linear infinite; /* Adjust duration as needed */
+            font-size: 2.5rem; /* Bigger font for marquee */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #F0F8FF; /* Light blue for weather theme */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 100px; /* Adjust size as needed */
+        }
+
+        /* Marquee animation */
+        @keyframes weatherMarquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Future Weather, Anytime, Anywhere</h1>
+    </header>
+
+    <section>
+        
+        <p>
+            Weather forecasting is crucial across various fields, affecting agriculture, disaster preparedness, and transportation. Traditional forecasting methods fall into two main categories theory-driven and data-driven. Theory-driven methods rely on complex atmospheric simulations, often requiring supercomputers, while data-driven methods use historical weather data through deep learning models. However, many data-driven approaches either treat all weather variables as a single dataset, missing detailed station-level correlations, or employ large neural networks with numerous parameters. To overcome these limitations; we propose a spatio-temporal self-supervised approach with XGBoost. This approach uses XGBoost to effectively identify detailed spatial relationships and temporal patterns. By combining the efficiency of XGBoost with spatio-temporal learning techniques, it aims to improve the accuracy of weather forecasts.
+
+        </p>
+    </section>
+</body>
+</html>
